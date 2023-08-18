@@ -1,18 +1,68 @@
-## Getting Started
+# Vostok Project Management
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-## Folder Structure
+## Table of Contents
 
-The workspace contains two folders by default, where:
+- [Introduction](#introduction)
+- [Features](#features)
+- [Roles](#roles)
+- [Screenshots](#screenshots)
+- [License](#license)
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Introduction
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+This project is a comprehensive project management application designed to streamline collaboration and communication between project administrators and users. The application provides an intuitive interface for managing projects, assigning resources, and tracking project status.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Features
 
-## Dependency Management
+- User authentication and authorization
+- Role-based access control for administrators and users
+- Project creation, management, and assignment
+- Material management and assignment to projects
+- User management, including account creation and details management
+- Email functionality for communication between administrators and users
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Roles
+
+The application supports two user roles:
+
+- **Admin:** Administrators have the following privileges:
+  - Generate and manage user accounts, including password reset and profile updates
+  - Create and manage materials, specifying attributes such as name, quantity, and description
+  - Create and manage projects, assigning materials and users to them
+  - Assign materials and users to projects, ensuring availability of resources
+  - Send emails to users for project updates, reminders, and communication
+- **User:** Users have the following privileges:
+  - View and manage projects assigned to them
+  - Update the status of projects at different stages of work, such as "In Progress," "Completed," etc.
+  - Receive email notifications for project assignments and updates
+
+## Screenshots
+
+[Include relevant screenshots or images that showcase your application's user interface and features.]
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
+![Capture d'écran 2023-08-18 114114](https://github.com/gheiythtba/Vostok-Project-Manager/assets/94230566/47f4350d-8f0a-4479-be20-ae017e362e15)
+![Uploading Capture d'écran 2023-08-18 114039.png…]()
+![Uploading Capture d'écran 2023-08-18 114018.png…]()
+![Uploading Capture d'écran 2023-08-18 114000.png…]()
+![Uploading Capture d'écran 2023-08-18 113913.png…]()
+![Uploading Capture d'écran 2023-08-18 113847.png…]()
+![Uploading Capture d'écran 2023-08-18 113830.png…]()
+![Uploading Capture d'écran 2023-08-18 113552.png…]()
+![Uploading Capture d'écran 2023-08-18 113535.png…]()
+![Uploading Capture d'écran 2023-08-18 113348.png…]()
+![Uploading Capture d'écran 2023-08-18 113327.png…]()
+![Uploading Capture d'écran 2023-08-18 113304.png…]()
+![Uploading Capture d'écran 2023-08-18 113244.png…]()
+![Uploading Capture d'écran 2023-08-18 113158.png…]()
+![Uploading Capture d'écran 2023-08-18 113128.png…]()
+![Uploading Capture d'écran 2023-08-18 112929.png…]()
+
+
+![Uploading Capture d'écran 2023-08-18 112828.png…]()![Uploading Capture d'écran 2023-08-18 112859.png…]()
