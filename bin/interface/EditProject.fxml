@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="container.EditProjectController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Edit%20Project.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="EditprojectID" layoutX="115.0" layoutY="263.0" prefHeight="40.0" prefWidth="180.0" promptText="Project ID" style="-fx-background-color: transparant; -fx-text-fill: #fff; -fx-font-size: 16px; -fx-font-family: Berlin Sans FB;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <DatePicker fx:id="EditprojectStartdate" layoutX="108.0" layoutY="609.0" prefHeight="40.0" prefWidth="350.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></DatePicker>
+      <TextArea fx:id="EditprojectDesc" layoutX="693.0" layoutY="405.0" prefHeight="160.0" prefWidth="499.0" promptText="Project Description" style="-fx-textfill: #000;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextArea>
+      <Button fx:id="EditProjectEditBtn0" layoutX="540.0" layoutY="638.0" mnemonicParsing="false" onAction="#EditProjectEditBtn" prefHeight="52.0" prefWidth="200.0" style="-fx-background-color: #4A5C97; -fx-text-fill: #fff; -fx-font-size: 18px; -fx-background-radius: 25; -fx-font-family: georgia;" text="Edit Project">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-modify-58.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="EditProjectBackBtn0" layoutX="1201.0" layoutY="29.0" mnemonicParsing="false" onAction="#EditProjectBackBtn" prefHeight="42.0" prefWidth="33.0" style="-fx-background-color: #fff; -fx-text-fill: #fff; -fx-font-size: 18px; -fx-background-radius: 25; -fx-font-family: georgia;">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-log-out-64.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="EditprojectMessageID" layoutX="379.0" layoutY="258.0" prefHeight="50.0" prefWidth="254.0" style="-fx-font-size: 14px; -fx-text-fill: #D90D1E; -fx-font-family: Berlin Sans FB;" textAlignment="CENTER" textFill="#d01010">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="EditProjectMessage" layoutX="754.0" layoutY="584.0" prefHeight="50.0" prefWidth="378.0" style="-fx-font-size: 18px; -fx-text-fill: #D90D1E; -fx-font-family: Berlin Sans FB;" textAlignment="CENTER" textFill="#d01010">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="EditProjectSearchBtn" layoutX="313.0" layoutY="261.0" minWidth="44.0" mnemonicParsing="false" onAction="#EditProjectSearch" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #4A5C97; -fx-text-fill: #fff; -fx-font-size: 18px; -fx-background-radius: 25; -fx-font-family: georgia;">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-search-50.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ComboBox fx:id="EditprojectManager" layoutX="108.0" layoutY="385.0" onAction="#select0" prefHeight="40.0" prefWidth="350.0" />
+      <ComboBox fx:id="EditprojectMaterial" layoutX="108.0" layoutY="498.0" onAction="#select1" prefHeight="40.0" prefWidth="350.0" />
+      <ComboBox fx:id="EditprojectStatus" layoutX="693.0" layoutY="263.0" onAction="#select2" prefHeight="40.0" prefWidth="350.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="container.EditMaterialController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Edit%20Material.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="EditMaterialFieldid" layoutX="126.0" layoutY="290.0" prefHeight="40.0" prefWidth="151.0" promptText="Material ID" style="-fx-background-color: transparant; -fx-text-fill: #fff; -fx-font-size: 16px; -fx-font-family: Berlin Sans FB;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="EditMaterialFieldname" layoutX="763.0" layoutY="290.0" prefHeight="40.0" prefWidth="350.0" promptText="Material Name" style="-fx-background-color: transparant; -fx-text-fill: #fff; -fx-font-size: 16px; -fx-font-family: Berlin Sans FB;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="EditMaterialFieldquantity" layoutX="763.0" layoutY="423.0" prefHeight="40.0" prefWidth="350.0" promptText="Material Quantity" style="-fx-background-color: transparant; -fx-text-fill: #fff; -fx-font-size: 16px; -fx-font-family: Berlin Sans FB;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="EditMaterialFieldcategory" layoutX="126.0" layoutY="423.0" prefHeight="40.0" prefWidth="350.0" promptText="Material Category" style="-fx-background-color: transparant; -fx-text-fill: #fff; -fx-font-size: 16px; -fx-font-family: Berlin Sans FB;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Button fx:id="EditMaterialEditBtn0" layoutX="546.0" layoutY="637.0" mnemonicParsing="false" onAction="#EditMaterialEditBtn" prefHeight="52.0" prefWidth="200.0" style="-fx-background-color: #4A5C97; -fx-text-fill: #fff; -fx-font-size: 18px; -fx-background-radius: 25; -fx-font-family: georgia;" text="Edit Material">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-modify-58.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="EditMaterialBackBtn0" layoutX="1211.0" layoutY="39.0" mnemonicParsing="false" onAction="#EditMaterialBackBtn" prefHeight="42.0" prefWidth="33.0" style="-fx-background-color: #fff; -fx-text-fill: #fff; -fx-font-size: 18px; -fx-background-radius: 25; -fx-font-family: georgia;">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-log-out-64.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="EditMaterialSearchBtn0" layoutX="301.0" layoutY="288.0" minWidth="44.0" mnemonicParsing="false" onAction="#EditMaterialSearchBtn" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #4A5C97; -fx-text-fill: #fff; -fx-font-size: 18px; -fx-background-radius: 25; -fx-font-family: georgia;">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-search-50.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="EditMaterialMessage" layoutX="418.0" layoutY="509.0" prefHeight="40.0" prefWidth="375.0" style="-fx-font-size: 16px; -fx-text-fill: #D90D1E; -fx-font-family: Berlin Sans FB;" textAlignment="CENTER" textFill="#d01010">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="EditMaterialMessage1" layoutX="359.0" layoutY="289.0" prefHeight="40.0" prefWidth="221.0" style="-fx-font-size: 14; -fx-text-fill: #D90D1E; -fx-font-family: Berlin Sans FB;" textAlignment="CENTER" textFill="#d01010">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

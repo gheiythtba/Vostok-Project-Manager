@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="container.AdminHomeController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/AdminDashboard2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="AdminAccountBtn1" layoutX="978.0" layoutY="110.0" mnemonicParsing="false" onAction="#AdminAccountBtn1" prefHeight="87.0" prefWidth="86.0" style="-fx-background-color: transparant; -fx-text-fill: #fff; -fx-font-size: 18px; -fx-background-radius: 25; -fx-font-family: georgia;">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-user-90.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="AdminHRBtn1" layoutX="978.0" layoutY="255.0" mnemonicParsing="false" onAction="#AdminHRBtn" prefHeight="75.0" prefWidth="86.0" style="-fx-background-color: trnansparant; -fx-text-fill: #fff; -fx-font-size: 18px; -fx-background-radius: 25; -fx-font-family: georgia;">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="60.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-group-90.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="AdminProjctBtn1" layoutX="978.0" layoutY="386.0" mnemonicParsing="false" onAction="#AdminProjctBtn" prefHeight="87.0" prefWidth="86.0" style="-fx-background-color: transparant; -fx-text-fill: #fff; -fx-font-size: 18px; -fx-background-radius: 25; -fx-font-family: georgia;">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-project-100%20(1).png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="AdminMRBtn1" layoutX="980.0" layoutY="521.0" mnemonicParsing="false" onAction="#AdminMRBtn" prefHeight="87.0" prefWidth="86.0" style="-fx-background-color: transparant; -fx-text-fill: #fff; -fx-font-size: 18px; -fx-background-radius: 25; -fx-font-family: georgia;">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/processor%20(1).png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="AdminLogoutBtn1" layoutX="52.0" layoutY="48.0" mnemonicParsing="false" onAction="#AdminLogoutBtn" prefHeight="42.0" prefWidth="122.0" style="-fx-background-color: transparant; -fx-text-fill: #fff; -fx-font-size: 14px; -fx-background-radius: 25; -fx-font-family: georgia;" text="Log Out">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/log-out.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="AdminHomeMessage" layoutX="411.0" layoutY="496.0" prefHeight="50.0" prefWidth="334.0" style="-fx-font-size: 18px; -fx-text-fill: #888789; -fx-font-family: Aventi;" textAlignment="CENTER" textFill="#d01010">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

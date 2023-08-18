@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="container.SplashController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/splash%20screen.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="signInButton1" layoutX="939.0" layoutY="363.0" mnemonicParsing="false" onAction="#affichelogin1" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #4A5C97; -fx-border-radius: 25px; -fx-background-radius: 25px;" text="SIGN IN" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="939.0" layoutY="448.0" mnemonicParsing="false" onAction="#afficheregister1" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #4A5C97; -fx-border-radius: 25px; -fx-background-radius: 25px;" text="SIGN UP" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="SplashExsitBtn1" layoutX="1204.0" layoutY="6.0" mnemonicParsing="false" onAction="#SplashExsitBtn" prefHeight="50.0" prefWidth="53.0" style="-fx-background-color: #4A5C97; -fx-text-fill: #fff; -fx-font-size: 14px; -fx-background-radius: 25; -fx-font-family: georgia;">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/cross.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

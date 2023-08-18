@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="container.ManageProjectController">
+   <children>
+      <ImageView fitHeight="480.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/manageProjects.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="manageProjectStatusCombobox" layoutX="280.0" layoutY="306.0" onAction="#ManageProjectCombox" prefHeight="40.0" prefWidth="250.0" />
+      <TextField fx:id="ManageProjectSearchID" layoutX="280.0" layoutY="196.0" prefHeight="40.0" prefWidth="180.0" promptText="Project ID" style="-fx-background-color: transparant; -fx-text-fill: #fff; -fx-font-size: 16px; -fx-font-family: Berlin Sans FB;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Button fx:id="manageProjectSearchBtn" layoutX="486.0" layoutY="194.0" minWidth="44.0" mnemonicParsing="false" onAction="#manageProjectSearch" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #4A5C97; -fx-text-fill: #fff; -fx-font-size: 18px; -fx-background-radius: 25; -fx-font-family: georgia;">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-search-50.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="manageProjectBackBtn" layoutX="639.0" layoutY="34.0" mnemonicParsing="false" onAction="#manageProjectBack" prefHeight="42.0" prefWidth="33.0" style="-fx-background-color: #fff; -fx-text-fill: #fff; -fx-font-size: 18px; -fx-background-radius: 25; -fx-font-family: georgia;">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-log-out-64.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="confirmbtn" layoutX="548.0" layoutY="304.0" minWidth="44.0" mnemonicParsing="false" onAction="#confirm" prefHeight="44.0" prefWidth="44.0" style="-fx-background-color: #4A5C97; -fx-text-fill: #fff; -fx-font-size: 18px; -fx-background-radius: 25; -fx-font-family: georgia;">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-checkmark-24.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="manageProjectMessage" layoutX="216.0" layoutY="369.0" prefHeight="50.0" prefWidth="378.0" style="-fx-font-size: 18px; -fx-text-fill: #D90D1E; -fx-font-family: Berlin Sans FB;" textAlignment="CENTER" textFill="#d01010">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

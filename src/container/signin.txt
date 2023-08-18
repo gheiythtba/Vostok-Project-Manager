@@ -1,0 +1,112 @@
+package container;
+
+import java.io.IOException;
+
+import Database.project;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+
+public class ManageProjectController {
+
+    @FXML
+    private TextField ManageProjectSearchID;
+
+    @FXML
+    private Button manageProjectBackBtn;
+
+    @FXML
+    private Button manageProjectSearchBtn;
+
+    @FXML
+    private ComboBox<String> manageProjectStatusCombobox;
+
+    private ObservableList<project> projectList;
+
+
+    @FXML
+    void ManageProjectCombox(ActionEvent event) {
+          String selectedStatus = manageProjectStatusCombobox.getSelectionModel().getSelectedItem();
+          int searchProjectID = Integer.parseInt(ManageProjectSearchID.getText()); // Get the entered project ID
+      
+          // Find the project in projectList based on the searched ID
+          for (project proj : projectList) {
+              if (proj.getProject_id() == searchProjectID) {
+                  // Update the status of the selected project in projectList
+                  proj.setProject_status(selectedStatus);
+                  break;
+              }
+          }
+      
+}
+
+
+public void initialize() {
+
+  ObservableList<String> statusList = FXCollections.observableArrayList(
+                "Not Started", "In Progress", "On Hold", "Completed", "Cancelled",
+                "Delayed", "In Review", "In Negotiation",
+                "Under Development", "Pending Resources", "Completed with Issues",
+                "Failed", "On Track", "Off Track");
+        manageProjectStatusCombobox.setItems(statusList);
+}
+  
+
+
+
+    public void setProjectList(ObservableList<project> projectList) {
+        this.projectList = projectList;
+    }
+
+    @FXML
+    void manageProjectBack(ActionEvent event) throws IOException {
+   Parent signUpRoot = FXMLLoader.load(getClass().getResource("/interface/userProjects.fxml"));  
+      Scene signUpScene = new Scene(signUpRoot);
+          // Create a new stage for the sign-in interface
+        Stage signUpStage = new Stage();
+        signUpStage.initStyle(StageStyle.TRANSPARENT);
+        signUpStage.setScene(signUpScene);
+        signUpStage.show();
+          // Close the splash screen stage
+      Stage splashSignInStage = (Stage) manageProjectBackBtn.getScene().getWindow();
+      splashSignInStage.close();
+    }
+
+
+
+
+    void manageProjectSearch(ActionEvent event) {
+      String searchProjectID = ManageProjectSearchID.getText(); // Get the entered project ID as a String
+      project selectedProject = null;
+  
+      // Find the project in projectList based on the searched ID
+      for (project proj : projectList) {
+        if (String.valueOf(proj.getProject_id()).equals(searchProjectID)) {
+          selectedProject = proj;
+              break;
+          }
+      }
+  
+      if (selectedProject != null) {
+          // Display the selected project's status in the combo box
+          manageProjectStatusCombobox.setValue(selectedProject.getProject_status());
+      } else {
+          // Handle the case when the project is not found (e.g., show an error message)
+          // For example: manageProjectStatusCombobox.setValue("Project not found");
+          
+      }
+  
+    }
+   
+  
+
+}

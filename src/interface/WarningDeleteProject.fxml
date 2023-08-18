@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="container.WarningDeleteProjectController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/WarningDeleteProject.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="YesWarningDeleteProjectBtn1" layoutX="164.0" layoutY="106.0" mnemonicParsing="false" onAction="#YesWarningDeleteProjectBtn" prefHeight="38.0" prefWidth="81.0" style="-fx-background-color: #E8AB09; -fx-text-fill: #fff; -fx-font-size: 15px; -fx-background-radius: 25; -fx-font-family: georgia;" text="Yes">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-checkmark-24.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="NoWarningDeleteProjectBtn1" layoutX="257.0" layoutY="105.0" mnemonicParsing="false" onAction="#NoWarningDeleteProjectBtn" prefHeight="38.0" prefWidth="81.0" style="-fx-background-color: #4A5C97; -fx-text-fill: #fff; -fx-font-size: 15px; -fx-background-radius: 25; -fx-font-family: georgia;" text="No">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-no-50.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

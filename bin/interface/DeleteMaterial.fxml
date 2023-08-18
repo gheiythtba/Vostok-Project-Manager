@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="container.DeleteMaterialController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Delete%20Materiel.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="DeleteMaterielSerachId" layoutX="240.0" layoutY="189.0" prefHeight="40.0" prefWidth="182.0" promptText="Search by ID" style="-fx-text-fill: #fff; -fx-font-size: 16; -fx-font-family: Berlin Sans FB; -fx-background-color: #000;">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Button fx:id="DeleteMaterialSearchBtn0" layoutX="439.0" layoutY="182.0" mnemonicParsing="false" onAction="#DeleteMaterialSearchBtn" prefHeight="50.0" prefWidth="43.0" style="-fx-background-color: #4A5C97; -fx-text-fill: #fff; -fx-font-size: 18px; -fx-background-radius: 25; -fx-font-family: georgia;">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-search-50.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="DeleteMaterialDeleteBtn0" layoutX="447.0" layoutY="646.0" mnemonicParsing="false" onAction="#DeleteMaterialDeleteBtn" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #4A5C97; -fx-text-fill: #fff; -fx-font-size: 18px; -fx-background-radius: 25; -fx-font-family: georgia;" text="Delete ">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-delete-30%20(1).png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="DeleteMaterialBackBtn0" layoutX="704.0" layoutY="646.0" mnemonicParsing="false" onAction="#DeleteMaterialBackBtn" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #4A5C97; -fx-text-fill: #fff; -fx-font-size: 18px; -fx-background-radius: 25; -fx-font-family: georgia;" text="Back">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-log-out-64.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView fx:id="TableDeleteMat" editable="true" layoutX="82.0" layoutY="271.0" prefHeight="308.0" prefWidth="1161.0" style="-fx-background-color: #000; -fx-table-cell-border-color: trnansparant; -fx-text-fill: #fff; -fx-border-color: #fff;">
+         <columns>
+            <TableColumn fx:id="material_idcol" prefWidth="121.0" style="-fx-background-insets: 0 0 0 0; -fx-table-cell-border-color: transparant; -fx-background-color: #8d8da9; -fx-alignment: center; -fx-font-size: 14; -fx-font-weight: Bold; -fx-text-fill: #000;" text="ID" />
+            <TableColumn fx:id="material_namecol" prefWidth="442.0" style="-fx-background-insets: 0 0 0 0; -fx-table-cell-border-color: transparant; -fx-alignment: center; -fx-font-size: 14; -fx-font-weight: Bold; -fx-background-color: #fff; -fx-text-fill: #4A5C97;" text="Name" />
+            <TableColumn fx:id="material_categorycol" prefWidth="246.0" style="-fx-background-insets: 0 0 0 0; -fx-table-cell-border-color: transparant; -fx-background-color: #8d8da9; -fx-alignment: center; -fx-font-size: 14; -fx-font-weight: Bold; -fx-text-fill: #000;" text="Category" />
+            <TableColumn fx:id="material_quantitycol" prefWidth="137.0" style="-fx-background-insets: 0 0 0 0; -fx-table-cell-border-color: transparant; -fx-alignment: center; -fx-font-size: 14; -fx-font-weight: Bold; -fx-background-color: #fff; -fx-text-fill: #4A5C97;" text="Qunatity" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label fx:id="DeleteMaterialMessage" layoutX="502.0" layoutY="182.0" prefHeight="50.0" prefWidth="378.0" style="-fx-font-size: 18px; -fx-text-fill: #D90D1E; -fx-font-family: Berlin Sans FB;" textAlignment="CENTER" textFill="#d01010">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
