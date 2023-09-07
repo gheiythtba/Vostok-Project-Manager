@@ -43,7 +43,7 @@
       </Button>
       <TableView fx:id="TableDeleteProject" editable="true" layoutX="65.0" layoutY="286.0" prefHeight="271.0" prefWidth="1150.0" style="-fx-background-color: #000; -fx-border-color: #fff;">
          <columns>
-            <TableColumn fx:id="project_colid" prefWidth="100.0" style="-fx-background-insets: 0 0 0 0; -fx-table-cell-border-color: transparant; -fx-background-color:  #4A5C97; -fx-alignment: center; -fx-font-size: 14; -fx-font-weight: Bold; -fx-text-fill: #fff;" text="ID" />
+            <TableColumn fx:id="project_colid" prefWidth="100.0" style="-fx-background-insets: 0 0 0 0; -fx-table-cell-border-color: transparant; -fx-background-color:  #4A5C97; -fx-alignment: center; -fx-font-size: 14; -fx-font-weight: Bold; -fx-text-fill: #000;" text="ID" />
             <TableColumn fx:id="project_colmanager" prefWidth="200.0" style="-fx-background-insets: 0 0 0 0; -fx-table-cell-border-color: transparant; -fx-alignment: center; -fx-font-size: 14; -fx-font-weight: Bold; -fx-background-color: #fff; -fx-text-fill: #4A5C97;" text="Manager" />
             <TableColumn fx:id="project_colMaterial" prefWidth="200.0" style="-fx-background-insets: 0 0 0 0; -fx-table-cell-border-color: transparant; -fx-background-color: #8d8da9; -fx-alignment: center; -fx-font-size: 14; -fx-font-weight: Bold; -fx-text-fill: #000;" text="Material" />
             <TableColumn fx:id="project_colStatus" prefWidth="150.0" style="-fx-background-insets: 0 0 0 0; -fx-table-cell-border-color: transparant; -fx-alignment: center; -fx-font-size: 14; -fx-font-weight: Bold; -fx-background-color: #fff; -fx-text-fill: #4A5C97;" text="Status" />
