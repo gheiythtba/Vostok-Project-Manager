@@ -41,14 +41,14 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <TableView fx:id="TableDeleteProject" editable="true" layoutX="65.0" layoutY="286.0" prefHeight="271.0" prefWidth="1150.0" style="-fx-background-color: #000; -fx-border-color: #fff;">
+      <TableView fx:id="TableDeleteProject" editable="true" layoutX="109.0" layoutY="286.0" prefHeight="271.0" prefWidth="1103.0" style="-fx-background-color: #000; -fx-border-color: #fff;">
          <columns>
-            <TableColumn fx:id="project_colid" prefWidth="100.0" style="-fx-background-insets: 0 0 0 0; -fx-table-cell-border-color: transparant; -fx-background-color:  #4A5C97; -fx-alignment: center; -fx-font-size: 14; -fx-font-weight: Bold; -fx-text-fill: #000;" text="ID" />
-            <TableColumn fx:id="project_colmanager" prefWidth="200.0" style="-fx-background-insets: 0 0 0 0; -fx-table-cell-border-color: transparant; -fx-alignment: center; -fx-font-size: 14; -fx-font-weight: Bold; -fx-background-color: #fff; -fx-text-fill: #4A5C97;" text="Manager" />
-            <TableColumn fx:id="project_colMaterial" prefWidth="200.0" style="-fx-background-insets: 0 0 0 0; -fx-table-cell-border-color: transparant; -fx-background-color: #8d8da9; -fx-alignment: center; -fx-font-size: 14; -fx-font-weight: Bold; -fx-text-fill: #000;" text="Material" />
-            <TableColumn fx:id="project_colStatus" prefWidth="150.0" style="-fx-background-insets: 0 0 0 0; -fx-table-cell-border-color: transparant; -fx-alignment: center; -fx-font-size: 14; -fx-font-weight: Bold; -fx-background-color: #fff; -fx-text-fill: #4A5C97;" text="Status" />
-            <TableColumn fx:id="project_colStartdate" prefWidth="150.0" style="-fx-background-insets: 0 0 0 0; -fx-table-cell-border-color: transparant; -fx-background-color: #8d8da9; -fx-alignment: center; -fx-font-size: 14; -fx-font-weight: Bold; -fx-text-fill: #000;" text="Start Date" />
-            <TableColumn fx:id="project_colDesc" prefWidth="400.0" style="-fx-background-insets: 0 0 0 0; -fx-table-cell-border-color: transparant; -fx-alignment: center; -fx-font-size: 14; -fx-font-weight: Bold; -fx-background-color: #fff; -fx-text-fill: #4A5C97;" text="Descreption" />
+            <TableColumn fx:id="project_colid" prefWidth="121.0" style="-fx-background-color: #4A5C97; -fx-text-fill: #fff;" text="ID" />
+            <TableColumn fx:id="project_colmanager" prefWidth="442.0" style="-fx-background-color: #97D2C7;" text="Manager" />
+            <TableColumn fx:id="project_colMaterial" prefWidth="246.0" style="-fx-background-color: #4A5C97; -fx-text-fill: #fff;" text="Material" />
+            <TableColumn fx:id="project_colStatus" prefWidth="137.0" style="-fx-background-color: #97D2C7;" text="Status" />
+            <TableColumn fx:id="project_colStartdate" prefWidth="75.0" text="Start Date" />
+            <TableColumn fx:id="project_colDesc" prefWidth="75.0" text="Descreption" />
          </columns>
          <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
